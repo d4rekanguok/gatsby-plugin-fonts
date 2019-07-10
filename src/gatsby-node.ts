@@ -2,15 +2,15 @@ import fs from 'fs-extra'
 import path from 'path'
 import { GatsbyNode, PluginOptions } from 'gatsby'
 import { consolidate } from './utils/consolidate'
-import { makeFonts } from './utils/make-fonts'
+import { makeAllFonts } from './utils/make-fonts'
 
 interface FontOptions extends PluginOptions {
   files: string;
-  fontFile: string;
+  fontFiles: string[];
 }
 
 export const onPostBuild: GatsbyNode['onPostBuild'] = async ({ store }, options: FontOptions) => {
-  const { files, fontFile } = options
+  const { files, fontFiles } = options
 
   const { directory } = store.getState().program
   const contentText = await consolidate({
@@ -24,9 +24,9 @@ export const onPostBuild: GatsbyNode['onPostBuild'] = async ({ store }, options:
   await fs.ensureFile(textPath)
   await fs.writeFile(textPath, purged)
 
-  await makeFonts({
+  await makeAllFonts({
     directory,
-    fontFile,
+    fontFiles,
     textPath,
   })
 }

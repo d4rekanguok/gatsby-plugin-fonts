@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-font",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Local font utilities for Gatsby",
   "main": "index.js",
   "scripts": {
@@ -38,7 +38,6 @@
     "@types/fs-extra": "^8.0.0",
     "execa": "^2.0.3",
     "fs-extra": "^8.1.0",
-    "glob": "^7.1.4",
-    "ttf2woff": "^2.0.1"
+    "glob": "^7.1.4"
   }
 }
