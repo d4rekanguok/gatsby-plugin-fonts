@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils/consolidate should retrieve all texts 1`] = `
+"holla, hallo한국어{
+  \\"lang\\": \\"일본어\\"
+}"
+`;

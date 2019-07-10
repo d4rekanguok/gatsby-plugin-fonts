@@ -1,0 +1,4 @@
+gatsby-node.js
+utils
+node_modules
+!src/utils

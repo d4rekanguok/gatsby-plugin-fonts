@@ -1,0 +1,44 @@
+{
+  "name": "gatsby-plugin-font",
+  "version": "1.0.0",
+  "description": "Local font utilities for Gatsby",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p ./",
+    "prepublishOnly": "tsc -p ./",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d4rekanguok/gatsby-plugin-fonts.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "fonts",
+    "web",
+    "local-fonts"
+  ],
+  "author": "Derek Nguyen <derek@penandpillow.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d4rekanguok/gatsby-plugin-fonts/issues"
+  },
+  "homepage": "https://github.com/d4rekanguok/gatsby-plugin-fonts#readme",
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.2",
+    "gatsby": "^2.13.12",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^8.0.0",
+    "execa": "^2.0.3",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4",
+    "ttf2woff": "^2.0.1"
+  }
+}
